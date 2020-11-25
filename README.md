@@ -71,13 +71,14 @@ hb.results <- hierBAPS(snp.matrix, n.cores = 6, max.depth = *1,2,3,4,5,6,7,8,9,1
 
 - ¿Los genotipos se ven afectados por el numero de n.pops?
 - *SI* cuando n.pops < genotipos esperados
-**Ejemplo**
-
+- **Ejemplo**
 ~~~
 hb.results <- hierBAPS(snp.matrix, n.cores = 6, max.depth = 10, n.pops = 2, quiet = TRUE)
 ~~~
+![Alt text](https://github.com/TBmex/dataset/blob/main/Rplot_lvl4_10_2.png)
 - *NO* cuando n.pops > genotipos esperados
-**Ejemplo**
+- **Ejemplo**
 ~~~
 hb.results <- hierBAPS(snp.matrix, n.cores = 6, max.depth = 10, n.pops = 50, quiet = TRUE)
 ~~~
+![Alt text](https://github.com/TBmex/dataset/blob/main/Rplot_lvl4_10_50.png)
