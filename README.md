@@ -13,7 +13,8 @@ max.depth = 4, n.pops = 50
 ~~~
 hb.results <- hierBAPS(snp.matrix, n.cores = 6, max.depth = 2, n.pops = 20, quiet = TRUE)
 ~~~
-Dos imagenes
+ ![Alt text](https://github.com/TBmex/dataset/blob/main/Rplot_2_20_1.png)
+ 
 
 ~~~
 hb.results <- hierBAPS(snp.matrix, n.cores = 6, max.depth = 3, n.pops = 20, quiet = TRUE)
