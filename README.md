@@ -15,7 +15,7 @@ hb.results <- hierBAPS(snp.matrix, n.cores = 6, max.depth = 2, n.pops = 20, quie
 ~~~
  ![Alt text](https://github.com/TBmex/dataset/blob/main/Rplot_2_20_1.png)
  ![Alt text](https://github.com/TBmex/dataset/blob/main/Rplot_2_20_2.png)
- 
+
 
 ~~~
 hb.results <- hierBAPS(snp.matrix, n.cores = 6, max.depth = 3, n.pops = 20, quiet = TRUE)
@@ -40,7 +40,7 @@ hb.results <- hierBAPS(snp.matrix, n.cores = 6, max.depth = 4, n.pops = 50, quie
 
 
 - Probemos system time de:
-
+- *El tiempo de corrida puede variar dependiendo del "n.pops", se puede obtener el mismo resultado en menos tiempo.*
 ~~~
 max.depth = 4, n.pops = 20
 max.depth = 4, n.pops = 50
@@ -59,4 +59,11 @@ max.depth = 4, n.pops = 100
 > system.time(hierBAPS(snp.matrix, n.cores = 6, max.depth = 4, n.pops = 100, quiet = TRUE))
    user  system elapsed
 468.577  33.076 102.328
+~~~
+
+- ¿Los genotipos cambian de acuerdo con el max.depth? *NO*
+- Se realizo la siguiente prueba con max.depth = 1 a 10, los arboles con parametro 6,7,8 9, y 10 presentaron 45 genotipos (arboles identicos).
+
+~~~
+hb.results <- hierBAPS(snp.matrix, n.cores = 6, max.depth = *1,2,3,4,5,6,7,8,9,10* n.pops = 50, quiet = TRUE)
 ~~~
